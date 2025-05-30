@@ -7,8 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Ball API</title>
 </head>
-<body class="bg-danger">
+<body>
+
+    <!-- Adjuntar el archivo js al html. -->
     <script href="/js/script.js"></script>
+
+    <!-- Header -->
+     <header class="text-center my-5">
+        <h5>API: Personajes de Dragon Ball</h5>
+        <p>Una api creada para el listado de personajes de la saga de Akira Toriyama.</p>
+     </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid w-50" id="busqueda">
+            <form class="d-flex w-100">
+                <input class="form-control me-2" type="text" placeholder="Buscar personaje..." id="b-busc">
+                <button class="btn btn-danger">Buscar</button>
+            </form>
+        </div>
+    </nav>
 
     <div class="card" id="card1">
         <div class="card-body">
