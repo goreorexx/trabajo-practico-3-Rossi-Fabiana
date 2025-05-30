@@ -11,4 +11,59 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+}
+        
+#busqueda {
+    display: flex;
+    margin-bottom: 20px;
+}
+        
+#b-busc {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #FFD700;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#botonbusq {
+    padding: 0 20px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#characters-container {
+    background-color: #D32F2F !important;  
+}
+
+.character-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s;
+    min-width: 240px;
+    margin-bottom: 4px;
+}
+
+.character-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.character-name {
+    color: #D32F2F;
+    margin-top: 0;
 }
