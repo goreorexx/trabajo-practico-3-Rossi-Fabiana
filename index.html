@@ -8,16 +8,12 @@
     <title>Dragon Ball API</title>
 </head>
 <body>
-
-    <!-- Adjuntar el archivo js al html. -->
-    <script href="/js/script.js"></script>
-
     <!-- Header -->
      <header class="text-center my-5">
         <h5>API: Personajes de Dragon Ball</h5>
         <p>Una api creada para el listado de personajes de la saga de Akira Toriyama.</p>
      </header>
-
+    <!-- Navbar con la barra de búsqueda. -->
     <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid w-50" id="busqueda">
             <form class="d-flex w-100">
@@ -27,14 +23,14 @@
         </div>
     </nav>
 
-    <div class="card" id="card1">
-        <div class="card-body">
-            <h5 class="card-title">Titulo</h5>
-            <h6 class="card-subtitle mb-2">subtitulo</h6>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis facilis eveniet eius tenetur quia minima adipisci unde blanditiis dolor. Totam, dicta. Dignissimos placeat debitis excepturi dolore odio assumenda est!</p>
-        </div>
-    </div>
+    <!-- Texto de carga de la página antes de mostrar los personajes. -->
+    <div id="loading" class="loading">Cargando personajes...</div>
+    <div id="characters-container" class="characters-container"></div>
 
+    <div id="charactersContainer" class="row g-4"></div>
+
+    <!-- Adjuntar el archivo js y el bootstrap al html. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
